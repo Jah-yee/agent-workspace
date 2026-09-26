@@ -110,3 +110,7 @@ Workspaces are tracked in `.agent-workspaces/registry.json` inside your reposito
 ## License
 
 MIT
+
+# agent-workspace
+
+![CI](https://github.com/yunaremaia/agent-workspace/actions/workflows/test.yml/badge.svg)
