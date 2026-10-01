@@ -124,8 +124,3 @@ and does it well.
 ## License
 
 MIT
-
-# agent-workspace
-
-![CI](https://github.com/yunaremaia/agent-workspace/actions/workflows/test.yml/badge.svg)
-
