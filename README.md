@@ -1,5 +1,7 @@
 # agent-workspace
 
+![ci](https://github.com/yunaremaia/agent-workspace/actions/workflows/test.yml/badge.svg) ![py](https://img.shields.io/badge/python-3.10-blue.svg) ![license](https://img.shields.io/github/license/yunaremaia/agent-workspace) ![stars](https://img.shields.io/github/stars/yunaremaia/agent-workspace)
+
 Git worktree manager for parallel AI agents.
 
 ## Why
@@ -107,6 +109,18 @@ Workspaces are tracked in `.agent-workspaces/registry.json` inside your reposito
 | Hooks system         | ❌        | ✅ (planned)    |
 | driftcheck integration| ❌       | ✅ (planned)    |
 
+If this tool is useful to you, a star helps other people find it.
+
+## Related tools
+
+- **[context-bridge](https://github.com/yunaremaia/context-bridge)** — persistent session memory for AI agents
+- **[memwatch](https://github.com/yunaremaia/memwatch)** — health-check and prune agent memory stores
+- **[agent-guard](https://github.com/yunaremaia/agent-guard)** — enforce guardrails on AI agent tool calls
+- **[sandbox-ffi-layers](https://github.com/yunaremaia/sandbox-ffi-layers)** — layer FFI calls behind a sandbox boundary
+
+Part of a family of focused, single-purpose developer tools — each one does one thing
+and does it well.
+
 ## License
 
 MIT
@@ -114,3 +128,4 @@ MIT
 # agent-workspace
 
 ![CI](https://github.com/yunaremaia/agent-workspace/actions/workflows/test.yml/badge.svg)
+
