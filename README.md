@@ -18,12 +18,13 @@ When running multiple AI coding agents (Claude Code, Codex, OpenCode) in paralle
 ## Install
 
 ```bash
-pip install agent-workspace-py
+pip install git+https://github.com/yunaremaia/agent-workspace.git
 ```
 
-> The distribution on PyPI is `agent-workspace-py`. The shorter `agent-workspace`
-> name is registered to a different project and is not this tool — installing it
-> will not give you `agent-workspace`.
+> **Not on PyPI yet.** The distribution is named `agent-workspace-py` because
+> the shorter `agent-workspace` name is registered to a different project. That
+> upload is still pending, so install from Git for now —
+> `pip install agent-workspace-py` does not resolve yet.
 
 Or from source:
 
