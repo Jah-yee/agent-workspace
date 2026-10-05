@@ -184,7 +184,8 @@ def prune_workspaces(repo_path: Path) -> list[str]:
     pruned: list[str] = []
     if result.returncode == 0 and result.stderr:
         for line in result.stderr.strip().splitlines():
-            pruned.append(line.strip())
+            if line.startswith("Removing "):
+                pruned.append(line[len("Removing "):].split(":")[0])
     return pruned
 
 
