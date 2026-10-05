@@ -158,4 +158,7 @@ class TestPruneWorkspaces:
         ws = create_workspace(git_repo, task="Stale task")
         import shutil
         shutil.rmtree(ws.worktree_path)
-        assert prune_workspaces(git_repo)
+        # git names the pruned entry after its worktree admin dir, not the full
+        # path, and only reports it on stderr — pin the exact value so a missing
+        # "Removing " filter cannot pass as a non-empty list.
+        assert prune_workspaces(git_repo) == [f"worktrees/{ws.id}"]
